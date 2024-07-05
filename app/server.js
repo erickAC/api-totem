@@ -2,11 +2,12 @@ const pg = require('pg');
 
 const { Client } = pg;
 const client = new Client({
-    user: 'postgres',
-    password: '123',
-    host: 'localhost',
+    ssl: true,
+    user: 'default',
+    password: 'L3fJFklOZ9PY',
+    host: 'ep-gentle-glitter-a40cm62w.us-east-1.aws.neon.tech',
     port: 5432,
-    database: 'totem',
+    database: 'verceldb',
 });
 client.connect();
 
